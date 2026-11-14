@@ -16,7 +16,7 @@ function useStoreValue() {
  const debts:Record<string,number>={...importBalances};
  for(const expense of expenses.filter(e=>!e.deleted&&!e.settled&&e.currency==="INR")) {
    if(expense.paidBy==="You") for(const [person,share] of Object.entries(expense.shares)) {if(person!=="You") debts[person]=(debts[person]||0)+share;}
-   else debts[expense.paidBy]=(debts[expense.paidBy]||0)-(expense.shares.You||0);
+   else debts[expense.paidBy]=(debts[expense.paidBy]||0)-(expense.shares["You"]||0);
  }
  const balance=Object.values(debts).reduce((a,b)=>a+b,0);
  return {theme,setTheme,expenses,setExpenses,friends,setFriends,groups,setGroups,profile,setProfile,currency,setCurrency,notifications,setNotifications,debts,balance,importBalances,setImportBalances};
