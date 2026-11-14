@@ -9,7 +9,7 @@
  --color-primary: var(--primary); --color-primary-foreground: var(--primary-foreground); --color-secondary: var(--secondary); --color-secondary-foreground: var(--foreground); --color-muted: var(--muted); --color-muted-foreground: var(--muted-foreground); --color-accent: var(--accent); --color-accent-foreground: var(--foreground); --color-destructive: var(--destructive); --color-destructive-foreground: var(--inverse); --color-border: var(--border); --color-input: var(--border); --color-ring: var(--primary); --color-positive: var(--positive); --color-stage: var(--stage); --color-hero: var(--hero); --color-ink: var(--ink); --color-inverse: var(--inverse);
 }
 :root {
- --radius: 8px; --background: oklch(.993 .002 100); --foreground: oklch(.21 .008 145); --card: oklch(1 0 0); --primary: oklch(.23 .009 145); --primary-foreground: oklch(1 0 0); --secondary: oklch(.949 .007 120); --muted: oklch(.955 .004 120); --muted-foreground: oklch(.55 .009 140); --accent: oklch(.93 .011 135); --destructive: oklch(.59 .2 25); --border: oklch(.913 .007 120); --positive: oklch(.627 .17 149.214); --stage: oklch(.933 .009 130); --hero: oklch(.962 .009 130);
+ --radius: 8px; --background: oklch(.993 .002 100); --foreground: oklch(.21 .008 145); --card: oklch(1 0 0); --primary: oklch(.23 .009 145); --primary-foreground: oklch(1 0 0); --secondary: oklch(.949 .007 120); --muted: oklch(.955 .004 120); --muted-foreground: oklch(.55 .009 140); --accent: oklch(.93 .011 135); --destructive: oklch(.59 .2 25); --border: oklch(.913 .007 120); --positive: oklch(.627 .194 149.214); --stage: oklch(.933 .009 130); --hero: oklch(.962 .009 130);
  --soot: oklch(.24 .007 145); --ghost: oklch(.99 .001 120); --sprout: oklch(.82 .095 155); --berry: oklch(.77 .125 15); --plum: oklch(.74 .115 300); --ink: oklch(.21 .008 145); --inverse: oklch(1 0 0);
  --shadow-phone: 0 25px 80px oklch(.2 .02 140 / .1), 0 0 0 1px oklch(.2 .02 140 / .07); --shadow-dock: 0 5px 24px oklch(.2 .01 140 / .13), 0 1px 3px oklch(.2 .01 140 / .05); --shadow-sheet: 0 -10px 50px oklch(.2 .01 140 / .08); --scrim: oklch(.17 .01 140 / .36);
 }
@@ -116,3 +116,7 @@
 @media(max-width:540px) { .phone-stage { padding:0; min-height:100dvh; } .phone { width:100%; height:100dvh; max-height:none; min-height:0; border-radius:0; box-shadow:none; } .island { display:none; } .status-bar { height:33px; padding-top:3px; } .app-scroll { height:calc(100% - 102px); } .dock { left:14px; right:14px; bottom:max(23px,env(safe-area-inset-bottom)); } }
 @media(max-width:370px) { .app-scroll { padding-left:18px; padding-right:18px; } .hero-card { padding-left:18px; padding-right:18px; } .hero-amount { font-size:44px; } .hero-art { width:65px; right:10px; } .dock { gap:6px; left:10px; right:10px; } .dock-actions > button { width:35px; } .sheet-panel { padding-left:18px; padding-right:18px; } .sheet-heading { font-size:28px; } }
 @media(prefers-reduced-motion:reduce) { *,*::before,*::after { animation-duration:.01ms !important; transition-duration:.01ms !important; } }
+
+.app-header button .mascot { width: 40px; height: 40px; }
+.theme-choice .mascot { width:47px; height:47px; }
+.sheet-panel:has(.split-heading) > .sheet-heading { display:none; }
