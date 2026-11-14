@@ -28,3 +28,8 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Prototype architecture
+- Keep simulated expenses, friends, groups and theme in a browser-safe React Context; this prototype intentionally has no hosted persistence or real AI calls.
+- Keep split calculations and CSV parsing in pure helpers with concrete calculation tests, so all five modes share cent-accurate accounting.
+- Render the app inside a constrained mobile canvas with in-canvas animated sheets, so desktop and mobile use the same interaction model.
