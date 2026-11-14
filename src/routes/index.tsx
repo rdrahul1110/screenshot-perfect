@@ -6,10 +6,10 @@ import { SettlApp } from "@/components/settl/app";
 // project's social preview (explicit og:image or latest screenshot).
 export const Route = createFileRoute("/")({
   head: () => ({ meta: [
-    { title: "Settl — Your people. Clear tabs." },
-    { name: "description", content: "A thoughtful shared-expense companion. Split expenses, bring your groups over, and settle up with your people." },
-    { property: "og:title", content: "Settl — Your people. Clear tabs." },
-    { property: "og:description", content: "Shared moments, clearly split. Meet Settl, your thoughtful expense companion." },
+    { title: "Hisab — Your people. Clear hisab." },
+    { name: "description", content: "A modern shared-expense companion. Split expenses, bring your groups over, and keep clean balances with friends." },
+    { property: "og:title", content: "Hisab — Your people. Clear hisab." },
+    { property: "og:description", content: "Smart group splits and clear tabs. Meet Hisab." },
     { property: "og:type", content: "website" },
     { name: "twitter:card", content: "summary_large_image" },
   ] }),
